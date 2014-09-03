@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: 'json' } do
     resources :users, only: [:index, :show]
+    resources :registrations, only: :create, path: 'sign_up'
   end
 end
