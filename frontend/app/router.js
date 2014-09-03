@@ -8,6 +8,7 @@ Router.map(function() {
   this.route('application');
   this.route('login');
   this.route('protected');
+  this.resource('users');
 });
 
 export default Router;
