@@ -17,6 +17,7 @@
     <script src="assets/notes.js"></script>
     <script>
       window.NotesENV = require('notes/config/environment')['default'];
+      window.ENV = window.NotesENV; // http://stackoverflow.com/a/24845613
       window.EmberENV = window.NotesENV.EmberENV;
       window.Notes = require('notes/app')['default'].create(NotesENV.APP);
     </script>
